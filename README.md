@@ -1,4 +1,4 @@
-## 学习python，实现一些xiaogongneng
+## 学习python，实现一些小功能
 
 
 ## 1. 12306 火车查询功能
