@@ -19,6 +19,10 @@
 
 ### 3. 命令行启动（全局）
 
+先通过setup.py安装， `python setup.py install`
+
+然后全局能使用 tickets `-dg 成都 南京 2018-01-01`
+
 
 
 ## 参考 [Python3 实现火车票查询工具](https://www.shiyanlou.com/courses/623/labs/2072/document)
