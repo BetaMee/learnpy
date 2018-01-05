@@ -71,8 +71,11 @@ def get_block_image(image,col_rect):
 def extractColor(filename):
     image = cv2.imread(filename)
     # 提取颜色参数
+    # color = [
+    #     ([25, 25, 25], [100, 100, 100]) #颜色参数~注意：数值按[b,g,r]排布
+    # ]
     color = [
-        ([25, 25, 25], [100, 100, 100]) #颜色参数~注意：数值按[b,g,r]排布
+        ([0, 0, 0], [50, 50, 50]) #颜色参数~注意：数值按[b,g,r]排布
     ]
     #如果color中定义了几种颜色区间，都可以分割出来 
     for (lower, upper) in color:

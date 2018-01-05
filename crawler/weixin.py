@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-__author__ = "liuzhijun"
+__author__ = "gongxiangqian"
 
 import requests
 
@@ -42,8 +42,8 @@ def extract_data(html_content):
         data = html.unescape(data)
         data = json.loads(data)
         articles = data.get("list")
-        for item in articles:
-            print(item)
+        # for item in articles:
+        #     print(item)
         return articles
 
 # v0.1
@@ -80,12 +80,13 @@ def crawl():
     data = extract_data(response.text)
     for item in data:
         print(item)
-    # 
-    with open("weixin_history.json", "w", encoding="utf-8") as f:
+    # 保存
+    with open("weixin_history.html", "w", encoding="utf-8") as f:
       f.write(response.text)
 
     
 
 if __name__ == '__main__':
     crawl()
+
 
