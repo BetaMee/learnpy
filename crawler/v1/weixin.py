@@ -1,3 +1,4 @@
+
 # -*- coding: utf-8 -*-
 __author__ = "gongxiangqian"
 
@@ -48,23 +49,23 @@ def extract_data(html_content):
 
 # v0.1
 def crawl():
-    url = "https://mp.weixin.qq.com/mp/profile_ext" \
-      "?action=home" \
-      "&__biz=MzA5NDc1NzQ4MA==" \
-      "&scene=124" \
-      "&devicetype=iOS11.2.1" \
-      "&version=16060120" \
-      "&lang=zh_CN" \
-      "&nettype=WIFI" \
-      "&a8scene=3" \
-      "&fontScale=100" \
-      "&pass_ticket=kM7Us0OCNb%2FL1%2FAMPi7VzZrVqz2V9f5e2cPDyMr1ycFMlSS8Li6bIgSGlN3sx%2FyH" \
-      "&wx_header=1" \
+    url = "https://mp.weixin.qq.com/mp/profile_ext"  \
+          "?action=home" \
+          "&__biz=MjM5MTY3OTYyMQ==" \
+          "&scene=124" \
+          "&devicetype=iOS11.2.1" \
+          "&version=16060124" \
+          "&lang=zh_CN" \
+          "&nettype=WIFI" \
+          "&a8scene=3" \
+          "&fontScale=100" \
+          "&pass_ticket=wj2j8pp2XnstT6wupUoiIxRoY2JjT3FOCEPXdBYhs7CPwSzfTIogmELiy3YZ4mRs" \
+          "&wx_header=1"
 
     headers = """
     Host: mp.weixin.qq.com
-    Cookie: devicetype=iOS11.2.1; lang=zh_CN; pass_ticket=kM7Us0OCNb/L1/AMPi7VzZrVqz2V9f5e2cPDyMr1ycFMlSS8Li6bIgSGlN3sx/yH; version=16060120; wap_sid2=CLzPvfkEEogBd1BqWV9PSmpYdlhFaHpsUDVuTTdqYnVXRkt2dFlHc3F0U1p6UGZDZEJVY0JqQ2hHd0N4aFdZTEgyZlJfZS1uZEU5Njd1NUV1a2J4bGhmWUVfNTd6MEJodjN0emNnRm5VZ1k1eVUxS0tXaEY4eC1kOU5fWldSWlRmeDdrZkpySFZxUU1BQUF+fjCS9Z7SBTgNQJVO; wxuin=1328506812; wxtokenkey=bdddea93fcc8bc4d3ddabb59e827e937625841f1918ae245450622ff8f3bd362; rewardsn=77b3d521e82b23a83550; pgv_pvid=6280301858; _scan_has_moon=1; eas_sid=Q1g5I1q201w0y4d0o2W5z3N4j4; _ga=GA1.2.557769603.1510924852; pac_uid=0_64f45f141b0a7; sd_cookie_crttime=1508507376988; sd_userid=58871508507376987
-    X-WECHAT-KEY: c5a4b5f1117b495aceef138df25145034f4542969ca0c5295004d4e7822cea1295e9411d39da5f616254387c633ab4d36b8f0799e057e47688b35a88d22a55a628ce4af637369264b5892f762419f957
+    Cookie: devicetype=iOS11.2.1; lang=zh_CN; pass_ticket=wj2j8pp2XnstT6wupUoiIxRoY2JjT3FOCEPXdBYhs7CPwSzfTIogmELiy3YZ4mRs; version=16060124; wap_sid2=CLzPvfkEEnBnRTdYc3Uxa1B4NzcxdUR3T3pyNEUwYVBRb09SQlk0MWk1bTVkdVdkUlpTdHk3VFRiX1lhZlcyNTNyQ0I1SVFnajFkeEpTUEVucFRuTmVOcHJ1LXFxYkJudlNyTWh2LWRuUGplb2pFNTUyT3FBd0FBMKzP1tIFOA1AAQ==; wxtokenkey=f9b3cef513031f0f50b8c9d88862ea0a8e44ae03f2dabb3e1e7d6b6f68c2233c; wxuin=1328506812; bk_token=fc1a7e18-e120-4f0a-a419-e1650f99b989; is_login=wx; is_wechat=1; platform=qq; pgv_pvid=6280301858; _scan_has_moon=1; eas_sid=Q1g5I1q201w0y4d0o2W5z3N4j4; _ga=GA1.2.557769603.1510924852; pac_uid=0_64f45f141b0a7; sd_cookie_crttime=1508507376988; sd_userid=58871508507376987
+    X-WECHAT-KEY: adf81ceca9f731adf0616538f206352254c024fb523c4201c13b897fe415ac1b39358633f4ce3038a0e4f6d76f1a00dad282b120637fab1135bc877cf50cad37a7cd27f3a8d3f8ff1b68b8846f594e23
     X-WECHAT-UIN: MTMyODUwNjgxMg%3D%3D
     Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
     User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 11_2_1 like Mac OS X) AppleWebKit/604.4.7 (KHTML, like Gecko) Mobile/15C153 MicroMessenger/6.6.1 NetType/WIFI Language/zh_CN
@@ -72,6 +73,8 @@ def crawl():
     Accept-Encoding: br, gzip, deflate
     Connection: keep-alive
     """
+
+
     headers = headers_to_dict(headers)
     response = requests.get(url, headers=headers, verify=False)
 
